@@ -1,6 +1,36 @@
 
 # MOTION ESTIMATION USING SURF & ORB
 
+## Demo Videos :
+
+### ORB Descriptors
+**Input:** <br>
+<a href="https://imgflip.com/gif/27epny"><img src="https://i.imgflip.com/27epny.gif" title="made at imgflip.com"/></a>
+
+**Output:** <br>
+<a href="https://imgflip.com/gif/27eqen"><img src="https://i.imgflip.com/27eqen.gif" title="made at imgflip.com"/></a>
+
+### ORB Keypoints with calcOpticalFlowPyrLK()
+**Input:** <br>
+<a href="https://imgflip.com/gif/27eprx"><img src="https://i.imgflip.com/27eprx.gif" title="made at imgflip.com"/></a>
+
+**Output:** <br>
+<a href="https://imgflip.com/gif/27eqiq"><img src="https://i.imgflip.com/27eqiq.gif" title="made at imgflip.com"/></a>
+
+### SURF descriptors
+**Input:** <br>
+<a href="https://imgflip.com/gif/27eptw"><img src="https://i.imgflip.com/27eptw.gif" title="made at imgflip.com"/></a>
+
+**Output:** <br>
+<a href="https://imgflip.com/gif/27eqkc"><img src="https://i.imgflip.com/27eqkc.gif" title="made at imgflip.com"/></a>
+
+### SURF keypoints with calcOpticalFlowPyrLK()
+**Input:** <br>
+<a href="https://imgflip.com/gif/27epv5"><img src="https://i.imgflip.com/27epv5.gif" title="made at imgflip.com"/></a>
+
+**Output:** <br>
+<a href="https://imgflip.com/gif/27eqlq"><img src="https://i.imgflip.com/27eqlq.gif" title="made at imgflip.com"/></a>
+
 ## INTRODUCTION:
 
 Keypoints are the points in an image that are interesting or stands out in an image which are
@@ -221,12 +251,20 @@ displacement vector showing the movement. The keypoints have been calculated for
 using the SURF and ORB local feature detectors. Motion estimation is done using the pyramid
 implementation of the Lucas-Kanade or KLT algorithm.
 
+**Input :**
+
+![picture1](https://user-images.githubusercontent.com/16779567/38119800-5e28a920-3379-11e8-9096-589ffd30021b.png)
+
+![picture2](https://user-images.githubusercontent.com/16779567/38119801-5e3f6bb0-3379-11e8-895b-05d36e16a2a1.png)
+
 **Output :**
 
 **SURF keypoints with CalcOpticalFlowPyrLK():**
 
 The different keypoints have been tracked using different colours. 4 feature key points have been
 detected by the algorithm using SURF and the resulting optical flow is obtained as follows:
+
+![picture3](https://user-images.githubusercontent.com/16779567/38119802-5e56e4c0-3379-11e8-900f-b1ff8bfe5bbd.png)
 
 We can change the number of keypoints obtained by changing the HessainThreshold value. If we
 increase the value of HessainThreshhold, the number of keypoints decrease and vice versa. Here
@@ -240,11 +278,15 @@ accordingly.
 The different keypoints have been tracked using different colours. 4 feature key points have been
 detected by the algorithm using ORB and the resulting optical flow is obtained as follows:
 
+![picture4](https://user-images.githubusercontent.com/16779567/38119803-5e6b6bac-3379-11e8-9049-459380071f18.png)
+
 We can change the number of keypoints obtained by changing the nFeatures value. nFeatures is
 proportional to number of keypoints. Here we have taken nFeatures= 4 which gives us four
 keypoints.
 
 **SURF descriptors with Flann Matching:**
+
+![picture5](https://user-images.githubusercontent.com/16779567/38119804-5e831dce-3379-11e8-977d-3d332d95b4ac.png)
 
 We can change the number of keypoints obtained by changing the HessainThreshold value. If we
 increase the value of HessainThreshhold, the number of keypoints decrease and vice versa. Here
@@ -253,6 +295,8 @@ input video or input from a camera, we will have to change the hessainThreshold 
 accordingly.
 
 **ORB descriptors with Flann Matching:**
+
+![picture6](https://user-images.githubusercontent.com/16779567/38119805-5ea08238-3379-11e8-866e-edaedae0f496.png)
 
 4 feature key points have been detected by the algorithm using ORB and the resulting optical
 flow is obtained as follows:
